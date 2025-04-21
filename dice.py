@@ -1,8 +1,13 @@
 import random
 
+totai = 0
 for i in range(10):
     x = random.randint(1,6)
+    totai += x
     print(str(i+1)+"回目："+str(x))
+
+average = totai/10
+print("平均値：" + str(round(average, 1))) 
 
 # 期待される出力結果例
 """
